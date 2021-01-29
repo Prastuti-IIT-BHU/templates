@@ -1,40 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/x-icon" href="gallery/title-logo.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Prastuti | A nice tagline</title>
-</head>
-<body>
-    <div id="navbar">
-        <a href="#top-section" class="navbar-item">Home</a>
-        <a href="#content" class="navbar-item">About Us</a>
-        <a class="navbar-item">Sign In</a>
-        <a class="navbar-item">Register</a>
-    </div>
-    <div id="top-section">
-        <video id="bg-video" src="./gallery/Circuit Board Background.mp4" autoplay loop muted>
-        </video>
-        <div id="overlay">
-            <h1 class="display-1">Prastuti - A nice tagline</h1>
-            <h1 class="display-5">Official tech-fest of Electrical department, IIT BHU</h1>
-            <a href="#content" id="get-started">Get Started<i class="fas fa-chevron-down ml-3"></i></i></a>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/x-icon" href="gallery/title-logo.png">
+        <!-- headroom.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.12.0/headroom.min.js" integrity="sha512-9UsrKTYzS9smDm2E58MLs0ACtOki+UC4bBq4iK5wi7lJycwqcaiHxr1bdEsIVoK0l5STEzLUdYyDdFQ5OEjczw==" crossorigin="anonymous"></script>
+
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+            integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+            integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Prastuti | A nice tagline</title>
+    </head>
+
+    <body>
+        <div id="navbar" class="headroom">                     
+            <a href="#top-section" class="navbar-item">Home</a>
+            <a href="#about" class="navbar-item">About</a>
+            <a href="#events" class="navbar-item">Events</a>
+            <a href="#" class="navbar-item">Workshops</a>
+            <a class="navbar-item">Sign In</a>
+            <a class="navbar-item">Register</a>
         </div>
-    </div>
-    <div id="content">
-        <h1 class="dispay-1">Hello World</h1>
-    </div>
-    <script src="js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
-    <script>
-        var scroll = new SmoothScroll('a[href*="#"]', {
-            speed: 1000,
-            speedAsDuration: true
-        });
-    </script>
-</body>
+        <div id="top-section">
+            <video id="bg-video" src="./gallery/Circuit Board Background.mp4" autoplay loop muted>
+            </video>
+            <div id="overlay">
+                <h1 class="display-1">Prastuti - A nice tagline</h1>
+                <h1 class="display-5">Official tech-fest of Electrical department, IIT BHU</h1>
+                <a href="#content" id="get-started">Get Started<i class="fas fa-chevron-down ml-3"></i></a>
+            </div>
+        </div>
+        <div class="content2 text-center" id="about">
+            <h1 class="dispay-1 text-dark">ABOUT</h1>
+        </div>
+        <div class="content text-center" id="events">
+            <h1 class="dispay-1 text-white">EVENTS</h1>
+            <div class="container-fluid events-cards">
+                <div class="card mb-3 event-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 event-img">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">CODIGO</h3>
+                                <p class="card-text"><strong class="text-muted">An online Coding event.</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="event-btns">
+                                <button class="btn btn-block btn-outline-success">
+                                    Register
+                                </button>
+                                <button class="btn btn-block btn-outline-success">
+                                    About
+                                </button>
+                                <button class="btn btn-block btn-outline-success">
+                                    P.S.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 event-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 event-img">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">CONSILIUM</h3>
+                                <p class="card-text"><strong class="text-muted">An online Digital Electronics event.</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="event-btns">
+                                <button class="btn btn-block btn-outline-info">
+                                    Register
+                                </button>
+                                <button class="btn btn-block btn-outline-info">
+                                    About
+                                </button>
+                                <button class="btn btn-block btn-outline-info">
+                                    P.S.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 event-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 event-img">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">RECOGNIZANCE</h3>
+                                <p class="card-text"><strong class="text-muted">A Machine Learning Event.</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="event-btns">
+                                <button class="btn btn-block btn-outline-warning">
+                                    Register
+                                </button>
+                                <button class="btn btn-block btn-outline-warning">
+                                    About
+                                </button>
+                                <button class="btn btn-block btn-outline-warning">
+                                    P.S.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 event-card">
+                    <div class="row no-gutters">
+                        <div class="col-md-4 event-img">
+                            <img src="..." class="card-img" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h3 class="card-title">CRYPTEX</h3>
+                                <p class="card-text"><strong class="text-muted">A Cryptography event.</strong></p>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                                    content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="event-btns">
+                                <button class="btn btn-block btn-outline-danger">
+                                    Register
+                                </button>
+                                <button class="btn btn-block btn-outline-danger">
+                                    About
+                                </button>
+                                <button class="btn btn-block btn-outline-danger">
+                                    P.S.
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row mr-auto">
+                        <div class="col footer-social">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="m-2">
+                            <img src='./gallery/Department.png' id="department">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom font-weight-bold">
+                <div class="text-center" id="copyright">
+                    © 2021 Copyright:
+                    <a class="text-dark" href="https://iitbhu.ac.in/dept/eee">Electrical Department</a>
+                </div>
+            </div>
+        </footer>
+        <script src="js/main.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script> -->
+        <!-- <script>
+            var scroll = new SmoothScroll('a[href*="#"]', {
+                speed: 1000,
+                speedAsDuration: true
+            });
+        </script> -->
+    </body>
+
 </html>
