@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="gallery/title-logo.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Prastuti | Register with us</title>
+  </head>
+  <body>
+    <div id="back-btn">
+      <a href="./index.html">
+        <i class="mr-2 fas fa-arrow-left"></i>
+        <span class="msg">Go Back</span>
+      </a>
+    </div>
+    <div id="sign-in-container">
+      <div class="row">
+        <div class="col col-12 col-lg-7">
+          <h1 class="display-5">Sign In</h1>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum
+            assumenda ipsum aut architecto. Nesciunt quibusdam id doloribus
+            nostrum tenetur, dolor ut natus corporis qui consequatur sapiente,
+            adipisci ea deserunt quis, architecto sequi maxime consectetur quae
+            aut. Nesciunt ut animi quos quasi, consequuntur tempora obcaecati
+            soluta, cupiditate quod ipsam natus minima.
+          </p>
+        </div>
+        <div class="col col-12 col-lg-5">
+          <form
+            id="sign-in-form"
+            class="form"
+            action="/users/signin/%7Busers:usersignin%7D"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="csrfmiddlewaretoken"
+              value="ypyX7bGZAoaQuUZIYGGwA9RLIeYbxdWaSn71Hd5ZCtkNre7weiUEOqNC0TsMbxzB"
+            />
+            <fieldset>
+              <div class="form-group">
+                <input
+                  placeholder="Enter your username"
+                  class="form-control form-control-sm"
+                  type="text"
+                  name="username"
+                  maxlength="150"
+                  autofocus=""
+                  required=""
+                  id="id_username"
+                />
+              </div>
+              <div class="form-group">
+                <input
+                  placeholder="Enter password"
+                  class="form-control-sm form-control"
+                  type="password"
+                  name="password1"
+                  autocomplete="new-password"
+                  required=""
+                  id="id_password1"
+                />
+                <div
+                  style="
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
+                  "
+                >
+                  <a class="forgot-password" href="./recovery.html"
+                    >Forgot Password?</a
+                  >
+                </div>
+              </div>
+            </fieldset>
+            <button
+              class="btn btn-block btn-info"
+              type="submit"
+              ,=""
+              value="Sign In"
+            >
+              Sign In
+            </button>
+            <div class="signIn-register">
+              <span>Not registered?</span>
+              <a href="./Signup.html">Create an Account</a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <footer id="footer">
+      <div class="footer-top">
+        <div class="container">
+          <div class="row mr-auto">
+            <div class="col footer-social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <div class="m-2">
+              <img src="./gallery/Department.png" id="department" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
